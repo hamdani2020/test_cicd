@@ -33,7 +33,7 @@ jobs:
 
       # Run tests
       - name: Run tests
-        run: npm test
+        run: npx vitest
 
       # Deploy to Netlify
       - name: Netlify Deploy
