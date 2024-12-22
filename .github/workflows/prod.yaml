@@ -8,7 +8,7 @@ on:
       - main
 
 # List of jobs
-# A "job" is a set of steps that are executed on the same runner
+
 jobs:
   # Name of the job
   test-and-deploy-to-netlify:
