@@ -8,7 +8,7 @@ on:
       - main
 
 # List of jobs
-
+# A "job" is a set of steps that are executed on the same runner
 jobs:
   # Name of the job
   test-and-deploy-to-netlify:
@@ -44,7 +44,7 @@ jobs:
           # Your Netlify site id
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           # Directory where built files are stored
-          build_directory: "./dist"
+          build_directory: "./dist" # Make sure this matches your build output folder
           # Command to install dependencies
           install_command: npm install
           # Command to build static website
